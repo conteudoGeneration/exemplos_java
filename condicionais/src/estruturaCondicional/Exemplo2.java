@@ -13,8 +13,7 @@ public class Exemplo2 {
 			System.out.println("O número 1 é menor do que o número 2.");
 		}
 		
-		if(n1 == n3) {
+		if(n1 == n3)
 			System.out.println("O número 1 e o número 3 são iguais.");
-		}
 	}
 }
