@@ -1,15 +1,26 @@
 package estruturaRepeticao;
 
+import java.util.Scanner;
+
 public class Exemplo4 {
 
 	public static void main(String[] args) {
-		int contador, soma;
+		int resultado, numero, contador = 1;
+		Scanner leia = new Scanner(System.in);
 
-		for (contador = 1, soma = 0; contador <= 10; contador++, soma+= contador) {
-			System.out.println("O valor do contador é: " + contador);
+		while (contador < 4) {
+			System.out.println("Digite o " + contador + "º número:");
+			numero = leia.nextInt();
+
+			resultado = numero * 3;
+			System.out.println(numero + " x 3 = " + resultado);
+			System.out.println("\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n");
+
+			contador++;
+
 		}
-
-		System.out.println("A soma dos 10 primeiros números é: " + soma);
+		
+		System.out.println("\t\t_________Fim do programa_________");
 
 	}
 

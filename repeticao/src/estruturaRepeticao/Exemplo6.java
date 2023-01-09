@@ -5,23 +5,18 @@ import java.util.Scanner;
 public class Exemplo6 {
 
 	public static void main(String[] args) {
-		int resultado, numero, contador = 1;
+
+		int numero, resultado, contador = 3;
 		Scanner leia = new Scanner(System.in);
 
-		while (contador < 4) {
-			System.out.println("Digite o " + contador + "º número:");
+		do {
+			System.out.println("Digite um número inteiro: ");
 			numero = leia.nextInt();
 
-			resultado = numero * 3;
-			System.out.println(numero + " x 3 = " + resultado);
-			System.out.println("\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n");
+			resultado = numero * 5;
 
-			contador++;
+			System.out.println("\nO resultado da multiplicação é: " + resultado);
 
-		}
-		
-		System.out.println("\t\t_________Fim do programa_________");
-
+		} while (contador <= 2);
 	}
-
 }
