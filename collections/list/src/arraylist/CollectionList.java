@@ -59,12 +59,6 @@ public class CollectionList {
 		// Exibe o tamanho da lista (numero de elementos)
 		System.out.println("\nO tamanho da lista é: " + notas.size());
 
-		// Exibe a maior nota da lista
-		System.out.println("\nA maior nota da lista é: " + Collections.max(notas));
-
-		// Exibe a menor nota da lista
-		System.out.println("\nA menor nota da lista é: " + Collections.min(notas));
-
 		// Limpa a lista e mostra que ela está vazia
 		notas.clear();
 		System.out.println("\nA lista está vazia: " + notas);
