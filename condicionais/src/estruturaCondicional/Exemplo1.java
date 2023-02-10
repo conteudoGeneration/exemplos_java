@@ -12,7 +12,7 @@ public class Exemplo1 {
 		}
 		
 		if(y) {
-			System.out.println("Y é falso");
+			System.out.println("Y é verdadeiro");
 		}
 
 	}
