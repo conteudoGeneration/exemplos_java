@@ -7,7 +7,7 @@ public class Exemplo1 {
 		boolean x = true;
 		boolean y = false;
 		
-		if(x) {
+		if(x == true) {
 			System.out.println("X é verdadeiro");
 		}
 		
