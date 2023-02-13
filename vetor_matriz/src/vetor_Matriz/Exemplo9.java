@@ -15,9 +15,6 @@ public class Exemplo9 {
 		} else {
 			System.out.println("Não, são diferentes.");
 		}
-
-		System.out.println("\nArrays convertidos em String");
-		System.out.println(Arrays.toString(grupoA));
-		System.out.println(Arrays.toString(grupoB));
+		
 	}
 }

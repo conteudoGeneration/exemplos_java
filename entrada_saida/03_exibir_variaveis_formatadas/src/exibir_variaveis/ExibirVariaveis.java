@@ -13,9 +13,9 @@ public class ExibirVariaveis {
 		String palavra = "Generation";
 		 
 		System.out.printf("Variável quantidade = %d", quantidade);
-		System.out.printf("Variável identificador = %3d", identificador);
-		System.out.printf("Variável altura = %8.2f", altura);
-		System.out.printf("Variável area = %6.2f", area);
+		System.out.printf("Variável identificador = %d", identificador);
+		System.out.printf("Variável altura = %.2f", altura);
+		System.out.printf("Variável area = %.2f", area);
 		System.out.printf("Variável tamanho = %e", tamanho);
 		System.out.printf("Variável tamanho = %E", tamanho);
 		System.out.printf("Variável tipo = %c", tipo);

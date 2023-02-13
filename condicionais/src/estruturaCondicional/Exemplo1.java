@@ -7,12 +7,12 @@ public class Exemplo1 {
 		boolean x = true;
 		boolean y = false;
 		
-		if(x) {
+		if(x == true) {
 			System.out.println("X é verdadeiro");
 		}
 		
 		if(y) {
-			System.out.println("Y é falso");
+			System.out.println("Y é verdadeiro");
 		}
 
 	}
