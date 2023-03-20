@@ -8,64 +8,62 @@ public class CollectionSet {
 
 	public static void main(String[] args) {
 		
-		// Cria a Collection Set chamada setNumeros
-		Set <Double> setNumeros = new HashSet<Double>();
-		
-		// Cria um Objeto da Classe Wrapper Double
-		Double d = 10.0;
-		
-		//Adiciona alguns numeros na Colection Set
-		setNumeros.add(7.0);
-		setNumeros.add(5.0);
-		setNumeros.add(3.0);
-		setNumeros.add(4.0);
-		setNumeros.add(10.0);
-		setNumeros.add(d);
-		setNumeros.add(null);
-		setNumeros.add(4.0);
-		
-		/** Mostra os dados armazenados na Collection Set
-          * Observe que números repetidos foram inseridos apenas uma vez
-          * e que o valor nulo (NULL) também foi adicionado
-          */
-		System.out.println("\nDados da Collection: " + setNumeros);
+		// Cria a Collection Set, do tipo String chamada setFrutas
+		Set<String> setFrutas = new HashSet<String>();
+
+		// Adiciona algumas frutas na Colection Set
+		setFrutas.add("Abacate");
+		setFrutas.add("Banana");
+		setFrutas.add("Jaboticaba");
+		setFrutas.add("Kiwi");
+		setFrutas.add("Maçã");
+		setFrutas.add("Morango");
+		setFrutas.add("Pêra");
+		setFrutas.add("Jaboticaba");
+		setFrutas.add("Kiwi");
+
+		/**
+		 * Mostra os dados armazenados na Collection Set Observe que as frutas repetidas
+		 * foram inseridos apenas uma vez
+		 */
+		System.out.println("\nDados da Collection: " + setFrutas);
 
 		// Verifica se um elemento está armazenado na Collection Set
-		System.out.println("\nExiste o numero 4.0? " + setNumeros.contains(4.0));
-		
+		System.out.println("\nExiste a fruta Kiwi? " + setFrutas.contains("Kiwi"));
+
 		// Remove um elemento da Collection
-		setNumeros.remove(4.0);
-		System.out.println("\nO numero 4 foi removido!");
-		
+		setFrutas.remove("Kiwi");
+		System.out.println("\nKiwi foi removida!");
+
 		// Verifica após a remoção se o elemento ainda existe na Collection Set
-		System.out.println("\nExiste o numero 4.0 na Collection? " + setNumeros.contains(4.0));
-				
+		System.out.println("\nExiste a fruta Kiwi na Collection? " + setFrutas.contains("Kiwi"));
+
 		// Lista os hashcodes da Collection através do Laço de repetição for...each
 		System.out.println("\n\nListar todos os Elementos com o Laço For..Each");
-		
-		for(Double numero : setNumeros) {
-			if(numero != null)
-				System.out.println("O Hashcode do Elemento " + numero + " é " + numero.hashCode());
+
+		for (String fruta : setFrutas) {
+			if (fruta != null)
+				System.out.println("O Hashcode do Elemento " + fruta + " é " + fruta.hashCode());
 		}
-		
+
 		// Lista todos os elementos da Collection Set com o Objeto da Classe Iterator
 		System.out.println("\n\nListar todos os Elementos com o Iterator");
-		
-		Iterator<Double> iNotas = setNumeros.iterator();
-		
-		while(iNotas.hasNext()) {
-			System.out.println(iNotas.next());
+
+		Iterator<String> isetFrutas = setFrutas.iterator();
+
+		while (isetFrutas.hasNext()) {
+			System.out.println(isetFrutas.next());
 		}
-		
+
 		// Verifica se a Collection Set está vazia
-		System.out.println("\nA Colection Set está vazia? " + setNumeros.isEmpty());
-		
+		System.out.println("\nA Colection Set está vazia? " + setFrutas.isEmpty());
+
 		// Limpa a Collection Set
-		setNumeros.clear();
+		setFrutas.clear();
 		System.out.println("\nTodos os itens foram removidos da Collection Set!");
-		
+
 		// Verifica novamente se a Collection Set está vazia
-		System.out.println("\nA Colection Set está vazia? " + setNumeros.isEmpty());
+		System.out.println("\nA Colection Set está vazia? " + setFrutas.isEmpty());
 		
 	}
 
